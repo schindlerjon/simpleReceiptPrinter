@@ -16,9 +16,12 @@ A receipt/list of all the purchased items with taxes added.
 How to Run
 -----------
 The user must enter the desired file's name on the command line initially to run the program as so:
+
        cmd>> python simpleReceiptPrinter.py filename.txt
+       
 This will ensure that the proper file is read from. 
 Each file must be formmatted in a specific manner, as follows:
+
       # item_count "description" as price
       
       Example.txt
@@ -44,10 +47,12 @@ In this program the definitions for "Exempt" and "Imported" are as follows:
 
 "Exempt" Definition
 Those items that are found as exempt must contain at least one of these words:
+
     "book", "books", "food", "chocolate", "chocolates", "bread", "medical", "pills"
 
 "Imported" Definition
 Those items that are found as imported must contain at least one of these words:
+
     "import", "imported", "from", "\'merica", "krypton", "gallifrey"
     
 Additionally, taxes are applied for one object, then multiplied by the number of 
